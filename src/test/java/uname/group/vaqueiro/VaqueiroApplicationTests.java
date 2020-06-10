@@ -8,6 +8,7 @@ class VaqueiroApplicationTests {
 
 	@Test
 	void contextLoads() {
+		assert(true);
 	}
 
 }
