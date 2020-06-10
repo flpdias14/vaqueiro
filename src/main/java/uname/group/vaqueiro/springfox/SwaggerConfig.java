@@ -4,14 +4,19 @@ import io.swagger.annotations.Api;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
-import springfox.documentation.swagger.web.*;
+
+import springfox.documentation.swagger.web.UiConfiguration;
+import springfox.documentation.swagger.web.ModelRendering;
+import springfox.documentation.swagger.web.DocExpansion;
+import springfox.documentation.swagger.web.UiConfigurationBuilder;
+import springfox.documentation.swagger.web.OperationsSorter;
+import springfox.documentation.swagger.web.TagsSorter;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import uname.group.vaqueiro.controller.AboioController;
